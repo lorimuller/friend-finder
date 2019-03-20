@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Survey Questions</h1>
+            <hr>
+            <h2>About You</h2>
+            <br>
+            <div class="form-group">
+                <label for="inputName">Name (Required)</label>
+                <input type="name" class="form-control" id="inputName">
+            </div>
+            <div class="form-group">
+                <label for="inputPic">Link To Photo Image (Required)</label>
+                <input type="photo" class="form-control" id="photo">
+            </div>
+            <div class="form-group" id="friend-form">
+                <label for="questOne">Question 1</label>
+                <p>Your idea of the perfect day is sitting at home with a good book and unplugging.</p>
+                <select class="form-control" id="questOne">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="questTwo">Question 2</label>
+                <p>You like to spend time outdoors.</p>
+                <select class="form-control" id="questTwo">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questThree">Question 3</label>
+                <p>You stay cool under pressure.</p>
+                <select class="form-control" id="questThree">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questFour">Question 4</label>
+                <p>You like to spend your time listening to music.</p>
+                <select class="form-control" id="questFour">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questFive">Question 5</label>
+                <p>You enjoy spending your time around friends.</p>
+                <select class="form-control" id="questFive">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questSix">Question 6</label>
+                <p>You prefer warm climates.</p>
+                <select class="form-control" id="questSix">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questSev">Question 7</label>
+                <p>You prefer warm climates.</p>
+                <select class="form-control" id="questSev">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>tion>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questEight">Question 8</label>
+                <p>You enjoy reading comic books.</p>
+                <select class="form-control" id="questEight">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quesNine">Question 9</label>
+                <p>You like spicy foods.</p>
+                <select class="form-control" id="questNine">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questTen">Question 10</label>
+                <p>You prefer salty over sweet.</p>
+                <select class="form-control" id="questTen">
+                    <option value="" selected disabled>Choose</option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly disagree)</option>
+                </select>
+            </div>
+            <!-- <button type="Button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">Submit</button> -->
+            <!-- <button type="Button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+               id="submitButton" >Submit</button> -->
+            <!-- Modal -->
+            <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body text-center">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-info" id="submit">Submit</button>
+            <br></br>
+            <a href="/">
+                <button type="button" class="btn btn-lg btn-primary">
+                    Return Home
+                </button>
+
+        </form>
+    </div>
+
+    <!-- Modal content-->
+
+    <div class="modal-body">
+        <h2 id="matchName"></h2>
+        <img id="matchImg" src="" alt="" height="350" width="300">
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="divider" class="modal-title" id="exampleModalLabel">Your Friend Match!</h5>
+                    <h5 id="userMatch"></h5>
+                    <img id="userMatchImage" class="materialboxed" width="650" src="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- jQuery Reference -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('#submit').on('click', function (event) {
+            // prevents the default submit button action
+            event.preventDefault();
+            // Set local variables
+            var matchStatus = $('.modal-title');
+            var modalBody = $('.modal-body');
+            // set responses to local variables
+            var name = $('#inputName').val().trim();
+            var photo = $('#photo').val();
+            var q1 = parseInt($('#questOne').val());
+            var q2 = parseInt($('#questTwo').val());
+            var q3 = parseInt($('#questThree').val());
+            var q4 = parseInt($('#questFour').val());
+            var q5 = parseInt($('#questFive').val());
+            var q6 = parseInt($('#questSix').val());
+            var q7 = parseInt($('#questSev').val());
+            var q8 = parseInt($('#questEight').val());
+            var q9 = parseInt($('#questNine').val());
+            var q10 = parseInt($('#questTen').val());
+
+            // Set data 
+            var userData = {
+                name: name,
+                photo: photo,
+                scores: [
+                    q1,
+                    q2,
+                    q3,
+                    q4,
+                    q5,
+                    q6,
+                    q7,
+                    q8,
+                    q9,
+                    q10
+                ]
+            };
+            // // modal logic
+            console.log("q 1", q1);
+            if (
+                (name !== '') && (photo !== '') && (!isNaN(q1)) &&
+                (!isNaN(q2)) && (!isNaN(q3)) && (!isNaN(q4)) &&
+                (!isNaN(q5)) && (!isNaN(q6)) && (!isNaN(q7)) &&
+                (!isNaN(q8)) && (!isNaN(q9)) && (!isNaN(q10))
+            ) {
+                // Grab the URL of the website
+                var currentURL = window.location.origin;
+                console.log("user data ", userData);
+                // AJAX post the data to the friends API. 
+                $.post(currentURL + "/api/friends", userData, function (data) {
+                    // If the data has a match, then show this
+                    console.log("data ", data);
+                    // console.log("data name", data.name);
+                    if (data.matchName !== undefined) {
+                        matchStatus.html('Your match...');
+                        modalBody.html('<p>...is ' + data.matchName + '!</p><img src="' + data.matchImage + '" height="200">');
+                   
+                    } else {
+                        // If no match, show this
+                        matchStatus.html('Not enough data!');
+                        modalBody.html('<p>Unfortunately there is not yet enough user data to match you</p>');
+                    }
+                    // Toggle modal on
+                    $('.modal').modal('toggle');
+                });
+            } 
+            else {
+                console.log("here ");
+                // If the form was not valid, this error is shown
+                matchStatus.html('Error...');
+                modalBody.html('Please completely answer all questions');
+                // Toggle modal on
+                $('.modal').modal('toggle');
+            }
+        });
+
+    </script>
+
+</body>
